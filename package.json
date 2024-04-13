@@ -1,8 +1,11 @@
 {
   "name": "todo-next",
   "version": "0.1.0",
+  "homepage": "https://natashulik.github.io/next-todo",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -25,6 +28,7 @@
     "daisyui": "^4.10.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
+    "gh-pages": "^6.1.1",
     "json-server": "^1.0.0-alpha.23",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
